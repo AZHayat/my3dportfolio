@@ -12,7 +12,7 @@ import {
 } from "@/components";
 import HeroBackground from "@/components/HeroBackground";
 import EarthContainer from "@/components/EarthContainer";
-import PlayerContainer from "@/components/PlayerContainer";
+
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
 
@@ -45,10 +45,7 @@ function App({ loading }) {
         <HeroBackground />
         <Hero loading={loading} isMobile={isMobile} />
       </div>
-      <section className="relative z-0 flex md:flex-row flex-col-reverse w-full h-full overflow-hidden">
-        <About />
-        {!isMobile && <PlayerContainer isMobile={isMobile} />}
-      </section>
+      
       <Services />
       <Experience />
       <Tech />
